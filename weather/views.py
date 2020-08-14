@@ -2,6 +2,9 @@ import requests
 from django.shortcuts import render, redirect
 from .models import City
 from .forms import CityForm
+import os
+
+YOURAPI = os.environ.get('YOURAPI', True)
 
 
 def index(request):
