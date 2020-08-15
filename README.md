@@ -6,8 +6,14 @@ get weather for any country using OpenWeatherMap API
 get all dependencies
 
 ```bash
-pub get
-```
+virtualenv .venv 
+source .venv/bin/activate 
+cd Weather_Django
+python3 manage.py makemigrations 
+python3 manage.py migrate
+pip3 install -r requirements.txt 
+python3 manage.py runserver 
+ ```
 ## Demo
 
 ### Hosting URL
